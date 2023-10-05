@@ -10,11 +10,10 @@ for(i=0; i< buttons.length; i++) {
         } else if(currentNum === "=") {         
            solution.innerHTML = (eval(display.innerHTML)  ) 
         }else if(currentNum === 'DEL'){
-            del()
+            del(currentNum)
            
         }
         else {
-            console.log(typeof(display.innerHTML))
             display.innerHTML +=  currentNum 
         }
     })
@@ -26,9 +25,8 @@ clear = () => {
     solution.innerHTML = " "
 };
 
-//should delete last number entered
+//delete last number entered
 del = () => {
-    display.innerHTML = display.innerHTML.substring(0, display.innerHTML - 1)
-    console.log('del pressed')
+    display.innerHTML = display.innerHTML.replace(/.$/, "")
 };
 
