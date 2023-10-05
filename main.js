@@ -5,7 +5,7 @@ let solution = document.querySelector('.current-number')
 for(i=0; i< buttons.length; i++) {
     buttons[i].addEventListener('click', (e)=> {
         currentNum = e.target.innerHTML
-        if(currentNum === 'AC'){
+        if(currentNum === 'C'){
            clear()
         } else if(currentNum === "=") {         
            solve()
