@@ -8,10 +8,9 @@ for(i=0; i< buttons.length; i++) {
         if(currentNum === 'AC'){
            clear()
         } else if(currentNum === "=") {         
-           solution.innerHTML = (eval(display.innerHTML)  ) 
+           solve()
         }else if(currentNum === 'DEL'){
             del(currentNum)
-           
         }
         else {
             display.innerHTML +=  currentNum 
@@ -19,12 +18,20 @@ for(i=0; i< buttons.length; i++) {
     })
 };
 
+solve = (x, y) => {
+  solution.innerHTML = (eval(display.innerHTML)) 
+}
+
+//solve on enter press 
+window.addEventListener('keydown', (e) => {
+    solve()
+    console.log('enter press')
+})
 // clear display
 clear = () => {
     display.innerHTML = " " 
     solution.innerHTML = " "
 };
-
 //delete last number entered
 del = () => {
     display.innerHTML = display.innerHTML.replace(/.$/, "")

@@ -1,7 +1,25 @@
 body {
-    background-color: black;
+    background-color: rgb(238, 115, 115);
+    margin: 0px;
+}
+.calc-main-ctn {
+    justify-content: center;
+}
+.numbers {
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px;
+    gap: 10px 10px;
 }
 
 .display {
-    min-height: 40px;
+   height: 40px;
+   grid-column-start: 1;
+   grid-column-end: 3;
 }
+
+.main-number-ctn {
+    padding-left: 10px;
+
+}
+
+
