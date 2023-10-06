@@ -1,43 +1,49 @@
 body {
-    height: 100vh;
-    background-color: rgb(118, 113, 113);
-    margin: 0px;
+  height: 100vh;
+  background-color: rgb(11, 11, 11);
+  margin: 0px;
 }
 .calc-main-ctn {
-   
-    width: 100%;
+  width: 100%;
 }
 .numbers {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 2px;
-    height: 75vh;
-    
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 15px;
+  height: 75vh;
 }
-.current-number {
-    font-size: 3rem;
+.previous-number {
+  color: rgb(90, 88, 88);
 }
-
-
 .display {
-   height: 20vh;
-   width: 100%;
-   margin: 0 auto;
-   font-size:xx-large;
+  height: 20vh;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 4rem;
+  background-color: rgb(36, 36, 35);
+  color: white;
+  font-weight: bold;
 }
 
 .main-number-ctn {
-    padding: 2px 10px;
-   margin:0 auto;
-   height: 100%;
+  padding: 2px 10px;
+  margin: 5px auto;
+  height: 100%;
 }
 button {
-    height: 100%;
-    width: 100%;
-    border-radius: 25%;
-    background-color: rgb(216, 173, 92);
-    font-weight: bold;
-    font-size: 1.5em;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: rgb(132, 124, 109);
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
+.operator {
+  background-color: rgb(216, 173, 92) !important;
+}
 
+#equals {
+  grid-column: 1/5;
+  border-radius: 25% !important;
+}
