@@ -24,7 +24,6 @@ solve = (x, y) => {
 
 //solve on enter press 
 window.addEventListener('keydown', (e) => {
-    solve()
     console.log('enter press')
 })
 // clear display
